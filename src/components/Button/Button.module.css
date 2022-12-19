@@ -1,12 +1,47 @@
 .Button {
-  width: 48px;
-  height: 48px;
+  /* height: 48px; */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  background-color: #f2f2f2;
-  border-radius: 12px;
+  background-color: transparent;
+  border-radius: 20px;
   border: none;
   cursor: pointer;
   outline: none;
+  padding: 16px 20px;
+  font-family: Montserrat, sans-serif;
+  transition: 175ms;
+  color: #c7c7c7;
+}
+
+.Button svg {
+  fill: #c7c7c7;
+  transition: 175ms;
+}
+
+.Button:hover {
+  /* background-color: #fafafa; */
+  transition: 175ms;
+  color: #468dff;
+}
+
+.Button:hover svg {
+  fill: #468dff;
+  transition: 175ms;
+}
+
+.Button.Selected {
+  color: #468dff;
+  background-color: #f1f6ff;
+}
+
+.Button.Selected svg {
+  fill: #468dff;
+  transition: 175ms;
+}
+
+.Label {
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: bold;
 }

@@ -8,9 +8,7 @@ export const Root = () => {
     <div className={styles.App}>
       <Header />
       <div className={styles.Container}>
-        <div className={styles.Content}>
-          <Outlet />
-        </div>
+        <Outlet />
       </div>
     </div>
   );

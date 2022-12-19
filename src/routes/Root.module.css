@@ -7,9 +7,3 @@
   display: flex;
   justify-content: center;
 }
-
-.Content {
-  max-width: 1280px;
-  width: 100%;
-  display: flex;
-}

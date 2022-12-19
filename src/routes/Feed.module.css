@@ -1,0 +1,38 @@
+.Content {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+}
+
+.Sidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Page {
+  margin-left: 48px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.PublishButton {
+  margin-bottom: 32px;
+}
+
+.Posts {
+  display: flex;
+  align-items: flex-start;
+}
+
+.PostsCol {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.PostsCol:last-child {
+  margin-right: 0;
+}

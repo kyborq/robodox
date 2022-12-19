@@ -15,8 +15,8 @@ export const Header = () => {
 
         <nav className={styles.Navigation}>
           <NavButton link="/" icon="compass" />
-          <NavButton link="/search" icon="search" />
-          <NavButton link="/favorite" icon="bookmark" />
+          {/* <NavButton link="/search" icon="search" /> */}
+          {/* <NavButton link="/favorite" icon="bookmark" /> */}
           <NavButton link="/user" icon="user" />
         </nav>
       </div>
