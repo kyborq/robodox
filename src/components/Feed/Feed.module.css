@@ -1,6 +1,21 @@
 .Feed {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  width: 100%;
   margin-right: 16px;
+}
+
+.Feed:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .Feed {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .Feed:last-child {
+    margin-bottom: 0;
+  }
 }

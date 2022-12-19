@@ -9,9 +9,7 @@ type Props = {
 
 export const Feed: React.FC<Props> = ({ feed }) => {
   const feedList = feed.map((post, index) => {
-    return (
-      <Card key={index} image={post.image} title={post.title} horizontal />
-    );
+    return <Card key={index} image={post.image} title={post.title} />;
   });
 
   return <div className={styles.Feed}>{feedList}</div>;

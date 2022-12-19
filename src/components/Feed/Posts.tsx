@@ -12,8 +12,8 @@ export const Posts: React.FC<Props> = ({ columns, data }) => {
   return (
     <div className={styles.Posts}>
       <Feed feed={data} />
-      {/* <Feed feed={secondPart} /> */}
-      {/* <Feed feed={thirdPart} /> */}
+      <Feed feed={data} />
+      <Feed feed={data} />
     </div>
   );
 };

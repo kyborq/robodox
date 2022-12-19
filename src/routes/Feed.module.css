@@ -1,6 +1,5 @@
 .Content {
   max-width: 1280px;
-  width: 100%;
   display: flex;
 }
 
@@ -8,6 +7,7 @@
   width: 300px;
   display: flex;
   flex-direction: column;
+  margin-right: 48px;
 }
 
 .Page {
@@ -35,4 +35,16 @@
 
 .PostsCol:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .Content {
+    flex-direction: column;
+  }
+
+  .Sidebar {
+    width: 100%;
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
 }

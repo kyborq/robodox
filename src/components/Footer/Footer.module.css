@@ -1,0 +1,51 @@
+.Container {
+  display: flex;
+  justify-content: center;
+}
+
+.Footer {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 48px;
+}
+
+.FooterLinks {
+  display: flex;
+}
+
+.Link {
+  margin-right: 16px;
+  font-size: 14px;
+  color: #c7c7c7;
+  text-decoration: none;
+}
+
+.Link:hover {
+  color: #a8a8a8;
+}
+
+.Link:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .Footer {
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+
+  .FooterLinks {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .Link {
+    margin-bottom: 8px;
+  }
+
+  .Link:last-child {
+    margin-bottom: 0;
+  }
+}

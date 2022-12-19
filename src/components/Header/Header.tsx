@@ -1,4 +1,5 @@
 import { Button } from "../Button/Button";
+import { IconButton } from "../Button/IconButton";
 import { Icon } from "../Icon";
 import { NavButton } from "../Navigation/NavButton";
 
@@ -15,10 +16,12 @@ export const Header = () => {
 
         <nav className={styles.Navigation}>
           <NavButton link="/" icon="compass" />
+          <NavButton link="/search" icon="search" />
           <NavButton link="/events" icon="calendar" />
           <NavButton link="/notifications" icon="notification" />
           <NavButton link="/user" icon="user" />
         </nav>
+        {/* <IconButton icon="menu" /> */}
       </div>
     </header>
   );
