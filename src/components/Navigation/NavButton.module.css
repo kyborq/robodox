@@ -1,0 +1,15 @@
+.Link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Link svg {
+  fill: #c7c7c7;
+}
+
+.Link.Active svg {
+  fill: black;
+}
