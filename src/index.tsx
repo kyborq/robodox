@@ -8,6 +8,8 @@ import { Root } from "./routes/Root";
 import "./index.css";
 import { Feed } from "./routes/Feed";
 import { User } from "./routes/User";
+import { Notifications } from "./routes/Notifications";
+import { Events } from "./routes/Events";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: "/user",
         element: <User />,
+      },
+      {
+        path: "/notifications",
+        element: <Notifications />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
       },
     ],
   },

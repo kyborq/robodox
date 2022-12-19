@@ -1,5 +1,6 @@
 import React from "react";
 import { TIcon } from "../../icons";
+import { classnames } from "../../utils/classnames";
 import { Icon } from "../Icon";
 
 import styles from "./Button.module.css";
@@ -7,28 +8,24 @@ import styles from "./Button.module.css";
 type Props = {
   icon?: TIcon;
   label?: string;
-  className?: string;
-  background?: string;
-  color?: string;
   selected?: boolean;
+  primary?: boolean;
 };
 
-export const Button: React.FC<Props> = ({
-  icon,
-  label,
-  className,
-  background,
-  color,
-  selected,
-}) => {
+export const Button: React.FC<Props> = ({ icon, label, selected, primary }) => {
+  const primaryStyle = primary && !selected && styles.Primary;
+  const selectedStyle = selected && !primary && styles.Selected;
+
   return (
-    <button
-      className={`${styles.Button} ${className} ${selected && styles.Selected}`}
-      style={{ backgroundColor: background }}
-    >
-      {!!icon && <Icon name={icon} fill={color} />}
+    <button className={classnames(styles.Button, primaryStyle, selectedStyle)}>
+      {!!icon && (
+        <Icon
+          name={icon}
+          className={classnames(styles.Icon, primaryStyle, selectedStyle)}
+        />
+      )}
       {!!label && (
-        <span className={styles.Label} style={{ color }}>
+        <span className={classnames(styles.Label, primaryStyle, selectedStyle)}>
           {label}
         </span>
       )}

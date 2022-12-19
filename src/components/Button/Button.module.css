@@ -1,7 +1,5 @@
 .Button {
-  /* height: 48px; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   background-color: transparent;
   border-radius: 20px;
@@ -11,23 +9,10 @@
   padding: 16px 20px;
   font-family: Montserrat, sans-serif;
   transition: 175ms;
-  color: #c7c7c7;
 }
 
-.Button svg {
-  fill: #c7c7c7;
-  transition: 175ms;
-}
-
-.Button:hover {
-  /* background-color: #fafafa; */
-  transition: 175ms;
-  color: #468dff;
-}
-
-.Button:hover svg {
-  fill: #468dff;
-  transition: 175ms;
+.Button.Primary { 
+  background-color: #468dff;
 }
 
 .Button.Selected {
@@ -35,13 +20,49 @@
   background-color: #f1f6ff;
 }
 
-.Button.Selected svg {
-  fill: #468dff;
+.Icon {
+  fill: #c7c7c7;
   transition: 175ms;
+}
+
+.Icon.Primary {
+  fill: #fff;
+}
+
+.Icon.Selected {
+  fill: #468dff;
 }
 
 .Label {
   margin-left: 16px;
   font-size: 14px;
   font-weight: bold;
+  color: #c7c7c7;
+}
+
+.Label.Primary {
+  color: #fff;
+}
+
+.Label.Selected {
+  color: #468dff;
+}
+
+.Button.Primary:hover .Label {
+  color: #fff;
+}
+
+.Button.Primary:hover .Icon {
+  fill: #fff;
+}
+
+.Button:hover .Label {
+  transition: 175ms;
+  color: #468dff;
+  transition: 175ms;
+}
+
+.Button:hover .Icon {
+  fill: #468dff;
+  transition: 175ms;
 }

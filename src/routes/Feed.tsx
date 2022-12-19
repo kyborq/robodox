@@ -24,13 +24,7 @@ export const Feed = () => {
   return (
     <div className={styles.Content}>
       <div className={styles.Sidebar}>
-        <Button
-          icon="add"
-          label="Создать"
-          className={styles.PublishButton}
-          background="#468DFF"
-          color="#fff"
-        />
+        <Button icon="add" label="Создать" primary />
         <Button icon="compass" label="Статьи" selected />
         <Button icon="bookmark" label="Закладки" />
       </div>

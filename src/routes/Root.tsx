@@ -10,6 +10,7 @@ export const Root = () => {
       <div className={styles.Container}>
         <Outlet />
       </div>
+      <div className={styles.Footer}>Robodox 2022</div>
     </div>
   );
 };

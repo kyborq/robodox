@@ -5,6 +5,8 @@ import user from "./user.svg";
 import search from "./search.svg";
 import compass from "./compass.svg";
 import bookmark from "./bookmark.svg";
+import notification from "./notification.svg";
+import calendar from "./calendar.svg";
 
 export const icons = {
   logo,
@@ -14,6 +16,8 @@ export const icons = {
   search,
   compass,
   bookmark,
+  calendar,
+  notification,
 };
 
 export type TIcon = keyof typeof icons;
